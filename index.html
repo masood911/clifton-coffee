@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clifton Coffee Roasters - Premium Coffee & Equipment</title>
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <p>Order before 10am for same day dispatch!</p>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+    
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+                <nav class="nav-main">
+                    <!-- Left Navigation -->
+                    <div class="nav-left">
+                        <div class="nav-item" data-menu="christmas">
+                            <a href="#" class="nav-link">Shop Christmas <span class="nav-arrow">▼</span></a>
+                        </div>
+                        <div class="nav-item" data-menu="coffee">
+                            <a href="#" class="nav-link">Coffee <span class="nav-arrow">▼</span></a>
+                        </div>
+                        <!-- <div class="nav-item" data-menu="subscriptions">
+                            <a href="#" class="nav-link">Subscriptions <span class="nav-arrow">▼</span></a>
+                        </div> -->
+                        <div class="nav-item" data-menu="accessories">
+                            <a href="#" class="nav-link">Accessories <span class="nav-arrow">▼</span></a>
+                        </div>
+                    </div>
+    
+                    <!-- Center Logo -->
+                    <div class="logo">
+                        <div class="logo-main">
+                            <img class="logo-img" src="./images/new-logo-white 3 1.png" alt="logo-responsive">
+                        </div>
+                    </div>
+    
+                    <!-- Right Navigation -->
+                    <div class="nav-right">
+                        <a href="#" class="nav-link">Wholesale</a>
+                        <a href="#" class="nav-link">Education</a>
+                        <a href="#" class="nav-link">Our Ethos</a>
+                        <div class="nav-icons">
+                            <a href="#" class="nav-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                            </a>
+                            <button class="nav-icon" id="search-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <path d="m21 21-4.35-4.35" />
+                                </svg>
+                            </button>
+                            <button class="nav-icon cart-icon" id="cart-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5M17 13v6a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-6" />
+                                </svg>
+                                <span class="cart-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+    
+    
+                <!-- Mobile Icons (Right) -->
+                <div class="mobile-icons">
+                    <button class="nav-icon" aria-label="Account">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </button>
+                    <button class="nav-icon" id="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
+                        </svg>
+                    </button>
+                    <button class="nav-icon cart-icon" id="cart-btn" aria-label="Shopping cart">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5M17 13v6a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-6" />
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+    
+            </div>
+
+
+
+             <!-- Mobile Navigation Menu -->
+            <div class="mobile-nav" id="mobile-nav">
+                <div class="mobile-nav-content">
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-trigger" data-menu="christmas">
+                            <span>Shop Christmas</span>
+                            <span class="mobile-arrow">▼</span>
+                        </button>
+                        <div class="mobile-nav-dropdown">
+                            <a href="#">Christmas Blends</a>
+                            <a href="#">Gift Sets</a>
+                            <a href="#">Seasonal Specials</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-trigger" data-menu="coffee">
+                            <span>Coffee</span>
+                            <span class="mobile-arrow">▼</span>
+                        </button>
+                        <div class="mobile-nav-dropdown">
+                            <a href="#">Single Origin</a>
+                            <a href="#">Blends</a>
+                            <a href="#">Decaf</a>
+                            <a href="#">Cold Brew</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-trigger" data-menu="subscriptions">
+                            <span>Subscriptions</span>
+                            <span class="mobile-arrow">▼</span>
+                        </button>
+                        <div class="mobile-nav-dropdown">
+                            <a href="#">Weekly Delivery</a>
+                            <a href="#">Monthly Box</a>
+                            <a href="#">Quarterly Selection</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-nav-item">
+                        <button class="mobile-nav-trigger" data-menu="accessories">
+                            <span>Accessories</span>
+                            <span class="mobile-arrow">▼</span>
+                        </button>
+                        <div class="mobile-nav-dropdown">
+                            <a href="#">Brewing Equipment</a>
+                            <a href="#">Mugs & Cups</a>
+                            <a href="#">Grinders</a>
+                        </div>
+                    </div>
+
+                    <div class="mobile-nav-item">
+                        <a href="#" class="mobile-nav-link">Wholesale</a>
+                    </div>
+
+                    <div class="mobile-nav-item">
+                        <a href="#" class="mobile-nav-link">Education</a>
+                    </div>
+
+                    <div class="mobile-nav-item">
+                        <a href="#" class="mobile-nav-link">Our Ethos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mega Menu -->
+            <div class="mega-menu" id="mega-menu">
+                <div class="mega-menu-content">
+                    <div class="mega-menu-grid">
+                        <div class="mega-menu-links">
+                            <h3 class="mega-menu-title"></h3>
+                            <ul class="mega-menu-list"></ul>
+                        </div>
+                        <div class="mega-menu-featured">
+                            <div class="featured-item">
+                                <img src="" alt="" class="featured-image">
+                                <h4 class="featured-title"></h4>
+                                <p class="featured-subtitle"></p>
+                            </div>
+                        </div>
+                        <div class="mega-menu-featured">
+                            <div class="featured-item">
+                                <img src="" alt="" class="featured-image">
+                                <h4 class="featured-title"></h4>
+                                <p class="featured-subtitle"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-overlay-content">
+            <button class="search-close" id="search-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="search-container">
+                <h2 class="search-title">Start search</h2>
+                <div class="search-input-container">
+                    <input type="text" class="search-input" placeholder="Search for products..." id="search-input">
+                    <button class="search-submit">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cart-panel">
+        <div class="cart-panel-content">
+            <div class="cart-header">
+                <h3 class="cart-title">Shopping Cart (0)</h3>
+                <button class="cart-close" id="cart-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="cart-body">
+                <div class="cart-empty">
+                    <p>Your cart is currently empty.</p>
+                    <button class="cart-continue-btn">Continue Browsing</button>
+                </div>
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Panel Overlay -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="./video/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Bold Coffee Moments</h1>
+            <button class="hero-btn">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Our Collections Section -->
+    <section class="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Collections</h2>
+            </div>
+            <div class="collections-slider">
+                <button class="slider-nav prev" id="collections-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="collections-track" id="collections-track">
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="./images/AprilSubs1-1024x435.png" alt="All Coffee" class="card-img">
+                            <div class="collection-overlay"></div>
+                            <div class="collection-content">
+                                <h3 class="collection-title">All Coffee</h3>
+                                <button class="collection-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="./images/AprilSubs1-1024x435 (1).png" alt="Clifton Tea" class="card-img">
+                            <div class="collection-overlay"></div>
+                            <div class="collection-content">
+                                <h3 class="collection-title">Clifton Tea</h3>
+                                <button class="collection-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="./images/AprilSubs1-1024x435 (2).png" alt="Clifton Merchandise" class="card-img">
+                            <div class="collection-overlay"></div>
+                            <div class="collection-content">
+                                <h3 class="collection-title">Clifton Merchandise</h3>
+                                <button class="collection-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="./images/coffee.png" alt="Gift Sets" class="card-img">
+                            <div class="collection-overlay"></div>
+                            <div class="collection-content">
+                                <h3 class="collection-title">Gift Sets</h3>
+                                <button class="collection-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="./images/AprilSubs1-1024x435.png" alt="Specialty Blends" class="card-img">
+                            <div class="collection-overlay"></div>
+                            <div class="collection-content">
+                                <h3 class="collection-title">Specialty Blends</h3>
+                                <button class="collection-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="./images/coffer-1.png" alt="Brewing Equipment" class="card-img">
+                            <div class="collection-overlay"></div>
+                            <div class="collection-content">
+                                <h3 class="collection-title">Brewing Equipment</h3>
+                                <button class="collection-btn">Shop Now</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                           <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="./images/coffee.png" alt="Gift Sets" class="card-img">
+                            <div class="collection-overlay"></div>
+                            <div class="collection-content">
+                                <h3 class="collection-title">Gift Sets</h3>
+                                <button class="collection-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="./images/AprilSubs1-1024x435.png" alt="Specialty Blends" class="card-img">
+                            <div class="collection-overlay"></div>
+                            <div class="collection-content">
+                                <h3 class="collection-title">Specialty Blends</h3>
+                                <button class="collection-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="./images/coffer-1.png" alt="Brewing Equipment" class="card-img">
+                            <div class="collection-overlay"></div>
+                            <div class="collection-content">
+                                <h3 class="collection-title">Brewing Equipment</h3>
+                                <button class="collection-btn">Shop Now</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <button class="slider-nav next" id="collections-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="collections-dots" id="collections-dots">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                    <button class="dot" data-slide="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Products Section -->
+    <section class="new-products">
+        <div class="container">
+            <div class="new-products-header">
+                <h2 class="section-title">New Products</h2>
+                <p class="section-subtitle">Discover our premium coffee collections crafted for every taste!</p>
+            </div>
+            
+            <div class="new-products-content">
+                <!-- Left Side - Image Grid -->
+                <div class="products-images">
+                    <div class="image-grid">
+                        <img src="./images/5.png" alt="Coffee brewing" class="grid-img">
+                        <img src="./images/3.png" alt="Coffee beans" class="grid-img">
+                        <img src="./images/6.png" alt="Coffee preparation" class="grid-img">
+                        <img src="./images/1.png" alt="Coffee cup" class="grid-img">
+                    </div>
+                </div>
+
+                <!-- Right Side - Product Cards and Tabs -->
+                <div class="products-section">
+                    <!-- Product Tabs -->
+                    <div class="product-tabs">
+                        <button class="tab-btn active" data-tab="coffee">Coffee</button>
+                        <button class="tab-btn" data-tab="capsule">Capsule</button>
+                        <button class="tab-btn" data-tab="all">All</button>
+                    </div>
+
+                    <!-- Products Container -->
+                    <div class="products-container">
+                        <!-- Product Cards -->
+                        <div class="products-grid" id="products-grid">
+                            <!-- Products will be dynamically loaded here -->
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <div class="products-nav">
+                            <button class="nav-arrow-btn prev" id="prev-btn" disabled>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="nav-arrow-btn next" id="next-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Coffee Section -->
+     <section class="shop-coffee">
+        <div class="container">
+            <div class="shop-coffee-content">
+                <div class="shop-coffee-text">
+                    <h2 class="section-title">Shop coffee</h2>
+                    <p class="section-description">Discover our exceptional range of single-origin coffees and signature
+                        blends, carefully roasted in small batches to preserve the unique characteristics of each bean.
+                    </p>
+                    <!-- <button class="btn-primary">Explore Collection</button> -->
+                </div>
+                <!-- <div class="shop-coffee-images">
+                    <div class="coffee-img-grid">
+                        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=250&h=300&fit=crop" alt="Coffee beans" class="grid-img">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=250&h=200&fit=crop" alt="Coffee preparation" class="grid-img">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=250&h=200&fit=crop" alt="Coffee equipment" class="grid-img">
+                        <img src="https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=250&h=300&fit=crop" alt="Coffee cup" class="grid-img">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+       <!-- Clifton Capsules Section -->
+    <section class="capsules-section">
+        <div class="container">
+            <div class="capsules-content">
+                <!-- Text Container with Sliding Effect -->
+                <div class="capsules-text-container">
+                    <div class="capsules-text-track" id="capsules-text-track">
+                        <div class="capsules-text-slide active">
+                            <h2>Clifton Capsules</h2>
+                            <p>Experience the convenience of our premium coffee capsules, delivering the same exceptional quality and taste as our freshly ground beans in a convenient, single-serve format.</p>
+                            <a href="#" class="btn-primary">Shop Capsules</a>
+                        </div>
+                        <div class="capsules-text-slide">
+                            <h2>Premium Espresso</h2>
+                            <p>Our espresso capsules offer the perfect balance of strength and smoothness, crafted from carefully selected beans and expertly roasted to create a rich, aromatic experience.</p>
+                            <a href="#" class="btn-primary">Explore Range</a>
+                        </div>
+                        <div class="capsules-text-slide">
+                            <h2>Specialty Blends</h2>
+                            <p>Indulge in our specialty blend capsules, featuring unique flavor profiles that showcase the distinct characteristics of coffee from different regions around the world.</p>
+                            <a href="#" class="btn-primary">Shop Blends</a>
+                        </div>
+                        <div class="capsules-text-slide">
+                            <h2>Sustainable Choice</h2>
+                            <p>Discover our sustainable capsule collection, made from recyclable materials while maintaining the highest standards of coffee quality and environmental responsibility.</p>
+                            <a href="#" class="btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Slider -->
+                <div class="capsules-image-slider">
+                    <div class="vertical-slider">
+                        <div class="slider-track" id="capsules-slider-track">
+                            <div class="slide">
+                                <img src="./images/2.png" 
+                                     alt="Coffee capsules machine" 
+                                     class="slide-image">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/AprilSubs1-1024x435.png" 
+                                     alt="Coffee capsules machine" 
+                                     class="slide-image">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/3.png" 
+                                     alt="Coffee capsules variety" 
+                                     class="slide-image">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/AprilSubs1-1024x435 (1).png" 
+                                     alt="Coffee brewing process" 
+                                     class="slide-image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-dots" id="capsules-slider-dots">
+                        <button class="capsules-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+                        <button class="capsules-dot" data-slide="1" aria-label="Go to slide 2"></button>
+                        <button class="capsules-dot" data-slide="2" aria-label="Go to slide 3"></button>
+                        <button class="capsules-dot" data-slide="3" aria-label="Go to slide 4"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Our Favorites Section -->
+   <section class="favorites">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Favorites</h2>
+            </div>
+            <div class="favorites-slider">
+                <div class="favorites-track" id="favorites-track">
+                    <div class="favorite-card">
+                        <div class="favorite-image">
+                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=400&fit=crop" alt="Peru Coffee">
+                        </div>
+                        <div class="favorite-info">
+                            <h3 class="favorite-name">Peru</h3>
+                            <div class="favorite-price">£13.50</div>
+                            <div class="favorite-stars">★★★★★</div>
+                        </div>
+                        
+                        <!-- Hover Card -->
+                        <div class="hover-card">
+                            <div class="hover-card-content">
+                                <div class="coffee-details">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Region</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Ahuachapán</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Producer</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Ricardo Lima</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Process</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Natural</span>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="hover-card-title">Clifton Coffee Colombia</h3>
+                                <div class="hover-card-price">£13.50</div>
+                                <div class="hover-card-stars">★★★★★</div>
+                                
+                                <div class="hover-card-buttons">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <a href="#" class="btn-read-more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="favorite-card">
+                        <div class="favorite-image">
+                            <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=400&h=400&fit=crop" alt="Indonesia Coffee">
+                        </div>
+                        <div class="favorite-info">
+                            <h3 class="favorite-name">Indonesia</h3>
+                            <div class="favorite-price">£13.50</div>
+                            <div class="favorite-stars">★★★★★</div>
+                        </div>
+                        
+                        <!-- Hover Card -->
+                        <div class="hover-card">
+                            <div class="hover-card-content">
+                                <div class="coffee-details">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Region</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Sumatra</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Producer</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Local Farmers</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Process</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Wet Hulled</span>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="hover-card-title">Clifton Coffee Indonesia</h3>
+                                <div class="hover-card-price">£13.50</div>
+                                <div class="hover-card-stars">★★★★★</div>
+                                
+                                <div class="hover-card-buttons">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <a href="#" class="btn-read-more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="favorite-card">
+                        <div class="favorite-image">
+                            <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=400&h=400&fit=crop" alt="Kenya Coffee">
+                        </div>
+                        <div class="favorite-info">
+                            <h3 class="favorite-name">Kenya</h3>
+                            <div class="favorite-price">£13.50</div>
+                            <div class="favorite-stars">★★★★★</div>
+                        </div>
+                        
+                        <!-- Hover Card -->
+                        <div class="hover-card">
+                            <div class="hover-card-content">
+                                <div class="coffee-details">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Region</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Kiambu</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Producer</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Cooperative</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Process</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Washed</span>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="hover-card-title">Clifton Coffee Kenya</h3>
+                                <div class="hover-card-price">£13.50</div>
+                                <div class="hover-card-stars">★★★★★</div>
+                                
+                                <div class="hover-card-buttons">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <a href="#" class="btn-read-more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="favorite-card">
+                        <div class="favorite-image">
+                            <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0d9?w=400&h=400&fit=crop" alt="Panama Coffee">
+                        </div>
+                        <div class="favorite-info">
+                            <h3 class="favorite-name">Panama</h3>
+                            <div class="favorite-price">£13.50</div>
+                            <div class="favorite-stars">★★★★★</div>
+                        </div>
+                        
+                        <!-- Hover Card -->
+                        <div class="hover-card">
+                            <div class="hover-card-content">
+                                <div class="coffee-details">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Region</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Boquete</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Producer</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Finca Esmeralda</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Process</span>
+                                        <div class="detail-divider"></div>
+                                        <span class="detail-value">Honey</span>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="hover-card-title">Clifton Coffee Panama</h3>
+                                <div class="hover-card-price">£13.50</div>
+                                <div class="hover-card-stars">★★★★★</div>
+                                
+                                <div class="hover-card-buttons">
+                                    <button class="btn-buy">Buy Now</button>
+                                    <a href="#" class="btn-read-more">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="slider-nav prev" id="favorites-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="slider-nav next" id="favorites-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <!-- Navigation Dots -->
+                <div class="favorites-dots">
+                    <button class="favorites-dot active"></button>
+                    <button class="favorites-dot"></button>
+                    <button class="favorites-dot"></button>
+                    <button class="favorites-dot"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+      <!-- Promotions Section -->
+    <section class="promotions">
+        <div class="container">
+            <div class="promotions-grid">
+                <div class="promo-card">
+                    <img src="./images/subscription.png"
+                        alt="Subscriptions">
+                    <div class="promo-overlay">
+                        <div class="promo-content">
+                            <h3 class="promo-title">Subscriptions</h3>
+                            <p class="promo-subtitle">Never run out of great coffee</p>
+                            <button class="promo-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="./images/subscription (1).png"
+                        alt="Brazil Trip 2024">
+                    <div class="promo-overlay">
+                        <div class="promo-content">
+                            <h3 class="promo-title">Brazil Trip 2024</h3>
+                            <p class="promo-subtitle">Behind the scenes at origin</p>
+                            <button class="promo-btn">Watch Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Virtual Tours Section -->
+    <section class="virtual-tours">
+        <div class="container">
+            <div class="tours-content">
+                <div class="tours-text">
+                    <h2 class="section-title">Virtual Tours</h2>
+                    <p class="section-tour-description">Come and visit Clifton Coffee directly, with our virtual tour
+                        you get a first hand experience of the atmosphere and coffee brewing process, before visiting
+                        in-person. Our team will be happy to guide you through our entire coffee journey.</p>
+                    <button class="virtual-btn-primary">Start Tour</button>
+                </div>
+                <div class="tours-image">
+                    <img src="./images/image.png"
+                        alt="Coffee shop interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Thousands of 5 Star Reviews</h2>
+            </div>
+            <div class="reviews-slider">
+                <div class="reviews-track" id="reviews-track">
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Amazing coffee quality! The single origin beans are exceptional and the
+                            delivery is always prompt. Highly recommend for any coffee lover."</p>
+                        <div class="review-author">- Sarah M.</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Been subscribing for over a year now and the quality never disappoints.
+                            The variety keeps things interesting and exciting."</p>
+                        <div class="review-author">- James T.</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Perfect roast every time. The team really knows their craft and it shows
+                            in every cup. My morning routine wouldn't be the same."</p>
+                        <div class="review-author">- Emily R.</div>
+                    </div>
+                </div>
+                <!-- <button class="slider-nav prev" id="reviews-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="slider-nav next" id="reviews-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram">
+        <div class="container"> 
+           <h2 class="insta-title">@cliftoncoffee</h2>
+        <p class="section-subtitle">Follow us on Instagram for the latest updates!</p>
+        
+        <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="insta-card">
+                        <img src="./images/box 1.png" alt="Coffee 4">
+                    </div>
+                    <div class="insta-card">
+                        <img src="./images/2 (1).png" alt="Coffee 5">
+                    </div>
+                           <div class="insta-card">
+                        <img src="./images/3 (1).png" alt="Coffee 6">
+                    </div>
+                    <div class="insta-card">
+                        <img src="./images/4.png" alt="Coffee 7">
+                    </div>
+                      <div class="insta-card">
+                        <img src="./images/5 (1).png" alt="Coffee 7">
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide">
+                     <div class="insta-card">
+                        <img src="./images/box 1.png" alt="Coffee 4">
+                    </div>
+                    <div class="insta-card">
+                        <img src="./images/2 (1).png" alt="Coffee 5">
+                    </div>
+                           <div class="insta-card">
+                        <img src="./images/3 (1).png" alt="Coffee 6">
+                    </div>
+                    <div class="insta-card">
+                        <img src="./images/4.png" alt="Coffee 7">
+                    </div>
+                      <div class="insta-card">
+                        <img src="./images/5 (1).png" alt="Coffee 7">
+                    </div>
+                </div>
+                   <div class="slide">
+                     <div class="insta-card">
+                        <img src="./images/box 1.png" alt="Coffee 4">
+                    </div>
+                    <div class="insta-card">
+                        <img src="./images/2 (1).png" alt="Coffee 5">
+                    </div>
+                           <div class="insta-card">
+                        <img src="./images/3 (1).png" alt="Coffee 6">
+                    </div>
+                    <div class="insta-card">
+                        <img src="./images/4.png" alt="Coffee 7">
+                    </div>
+                      <div class="insta-card">
+                        <img src="./images/5 (1).png" alt="Coffee 7">
+                    </div>
+                </div>
+                   <div class="slide">
+                     <div class="insta-card">
+                        <img src="./images/box 1.png" alt="Coffee 4">
+                    </div>
+                    <div class="insta-card">
+                        <img src="./images/2 (1).png" alt="Coffee 5">
+                    </div>
+                           <div class="insta-card">
+                        <img src="./images/3 (1).png" alt="Coffee 6">
+                    </div>
+                    <div class="insta-card">
+                        <img src="./images/4.png" alt="Coffee 7">
+                    </div>
+                      <div class="insta-card">
+                        <img src="./images/5 (1).png" alt="Coffee 7">
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="dots-container" id="dotsContainer">
+            <button class="dot active" data-slide="0"></button>
+            <button class="dot" data-slide="1"></button>
+            <button class="dot" data-slide="2"></button>
+            <button class="dot" data-slide="3"></button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="section-title">Newsletter</h2>
+                <p class="section-description">Stay updated with our latest coffee releases, brewing tips, and exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Coffee</a></li>
+                        <li><a href="#">Equipment</a></li>
+                        <li><a href="#">Subscriptions</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Learn</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Brewing Guide</a></li>
+                        <li><a href="#">Coffee Origins</a></li>
+                        <li><a href="#">Roasting Process</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Follow Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <div class="logo-main">CLIFTON</div>
+                    <div class="logo-sub">COFFEE ROASTERS</div>
+                </div>
+                <div class="footer-copyright">
+                    © 2025 Clifton Coffee Roasters. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+      <script src="js/utils.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/mega-menu.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/search-cart.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/collections.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
