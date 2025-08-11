@@ -411,9 +411,12 @@
     }
 
     .newsletter-form {
-        /* flex-direction: column; */
         max-width: 300px;
-                margin-left: 50px;
+        margin: 0 auto; /* centers horizontally */
+        display: flex;
+        justify-content: center; /* centers content horizontally */
+        align-items: center;     /* centers content vertically (if height given) */
+        
     }
 
     .footer-bottom {
