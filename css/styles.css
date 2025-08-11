@@ -1020,7 +1020,7 @@ font-size: 30px;
  }
 
  .new-products {
-       /* padding: var(--spacing-6xl) 0; */
+       /* padding: var(--spacing-2xl) 0; */
             background: #f6f8f2;
             overflow: hidden;
             min-height: 100vh;
@@ -2000,40 +2000,40 @@ font-size: 30px;
    transform: scale(1.3);
  }
 
- .instagram {
-   padding: var(--spacing-4xl) 0;
-   background: #f6f8f2;
-   text-align: center;
- }
+  .instagram {
+    padding: var(--spacing-4xl) 0;
+    background: #f6f8f2;
+    text-align: center;
+  }
 
- .instagram-grid {
-   display: grid;
-   grid-template-columns: repeat(5, 1fr);
-   gap: 10px;
-   margin-top: var(--spacing-3xl);
- }
+  .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: var(--spacing-3xl);
+  }
 
- .instagram-item {
-   aspect-ratio: 1;
-   overflow: hidden;
-   border-radius: var(--radius-md);
- }
+  .instagram-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+  }
 
- .instagram-item img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   transition: transform var(--transition-fast);
- }
+  .instagram-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-fast);
+  }
 
- .instagram-item:hover img {
-   transform: scale(1.1);
- }
+  .instagram-item:hover img {
+    transform: scale(1.1);
+  }
 
- .newsletter {
-   padding: var(--spacing-6xl) 0;
-   background: #e0e1da;
- }
+  .newsletter {
+    padding: var(--spacing-6xl) 0;
+    background: #e0e1da;
+  }
 
  .newsletter-content {
    text-align: center;

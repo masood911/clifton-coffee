@@ -61,6 +61,7 @@
     .slide {
         gap: 6px;
         padding: 0;
+                width: max-content;
     }
 
     .insta-card {
@@ -482,8 +483,14 @@
                 padding: 0 var(--spacing-md);
             }
     .slider-container {
-        padding: 0 40px;
+        padding: 0 10px;
     }
+    
+ .slider-track {
+        gap: 10px; /* add space between images */
+    }
+
+ 
 
     .slider-nav {
         width: 40px;
@@ -547,6 +554,10 @@
     /* .new-products {
                 padding: var(--spacing-3xl) 0;
             } */
+
+             .new-products {
+       padding: var(--spacing-2xl) 0;
+ }
             
             .new-products-content {
                 gap: var(--spacing-2xl);
