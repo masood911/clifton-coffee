@@ -452,6 +452,12 @@
 }
 
 @media (max-width: 480px) {
+    .hero-video {
+        height: 80%;
+    }
+    .hero-overlay {
+        height: 80%;
+    }
       .container {
                 padding: 0 var(--spacing-md);
             }
@@ -482,7 +488,9 @@
         max-width: 280px;
         border-radius: var(--radius-lg);
     }
-
+.collections {
+    padding: 0px;
+}
     .collections-track {
         gap: var(--spacing-sm);
     }

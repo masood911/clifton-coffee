@@ -775,7 +775,7 @@
  .hero-content {
    max-width: 800px;
    padding: 0 var(--spacing-lg);
-   margin-top: 95px;
+   /* margin-top: 95px; */
  }
 
  .hero-title {
