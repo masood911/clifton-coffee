@@ -763,3 +763,181 @@ if (document.readyState === 'loading') {
 } else {
     initializeSlidersAndNavigations();
 }
+
+      function initializeReviewsSlider() {
+            const track = document.getElementById('reviews-track');
+            const dotsContainer = document.getElementById('reviews-dots');
+            const cards = document.querySelectorAll('.review-card');
+            
+            if (!track || !dotsContainer || cards.length === 0) {
+                console.error('Reviews slider elements not found');
+                return;
+            }
+            
+            let currentIndex = 0;
+            const cardWidth = 350 + 40; // card width + gap
+            let visibleCards = getVisibleCards(track, cardWidth);
+            let maxSlides = Math.max(0, Math.ceil(cards.length / visibleCards) - 1);
+            
+            function getVisibleCards(container, itemWidth) {
+                const containerWidth = container.parentElement.offsetWidth;
+                return Math.floor(containerWidth / itemWidth);
+            }
+            
+            function updateSlider() {
+                const translateX = -currentIndex * (cardWidth * visibleCards);
+                track.style.transform = `translateX(${translateX}px)`;
+                updateDots();
+                console.log(`Reviews slider - Index: ${currentIndex}, MaxSlides: ${maxSlides}`);
+            }
+            
+            function updateDots() {
+                // Remove all existing dots
+                dotsContainer.innerHTML = '';
+                
+                // Create new dots based on maxSlides
+                for (let i = 0; i <= maxSlides; i++) {
+                    const dot = document.createElement('button');
+                    dot.className = 'reviews-dot';
+                    dot.setAttribute('data-slide', i);
+                    if (i === currentIndex) {
+                        dot.classList.add('active');
+                    }
+                    
+                    // Add click event listener
+                    dot.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        console.log(`Reviews dot ${i} clicked`);
+                        goToSlide(i);
+                    });
+                    
+                    dotsContainer.appendChild(dot);
+                }
+                
+                console.log(`Reviews dots updated - Total: ${maxSlides + 1}, Active: ${currentIndex}`);
+            }
+            
+            function goToSlide(index) {
+                if (index >= 0 && index <= maxSlides) {
+                    currentIndex = index;
+                    updateSlider();
+                }
+            }
+            
+            // Touch/Swipe functionality
+            function setupTouchEvents() {
+                let startX = 0;
+                let currentX = 0;
+                let isDragging = false;
+                
+                track.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                    track.style.transition = 'none';
+                }, { passive: true });
+                
+                track.addEventListener('touchmove', (e) => {
+                    if (!isDragging) return;
+                    e.preventDefault();
+                    currentX = e.touches[0].clientX;
+                    const diffX = currentX - startX;
+                    const translateX = -currentIndex * (cardWidth * visibleCards) + diffX;
+                    track.style.transform = `translateX(${translateX}px)`;
+                }, { passive: false });
+                
+                track.addEventListener('touchend', (e) => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    track.style.transition = 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
+                    
+                    const diffX = currentX - startX;
+                    const threshold = 100;
+                    
+                    if (diffX > threshold && currentIndex > 0) {
+                        currentIndex--;
+                    } else if (diffX < -threshold && currentIndex < maxSlides) {
+                        currentIndex++;
+                    }
+                    
+                    updateSlider();
+                });
+            }
+            
+            setupTouchEvents();
+            
+            // Resize handler
+            window.addEventListener('resize', debounce(() => {
+                visibleCards = getVisibleCards(track, cardWidth);
+                maxSlides = Math.max(0, Math.ceil(cards.length / visibleCards) - 1);
+                currentIndex = Math.min(currentIndex, maxSlides);
+                updateSlider();
+            }, 250));
+            
+            // Auto-slide functionality
+            let autoSlideInterval;
+            
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(() => {
+                    if (currentIndex < maxSlides) {
+                        currentIndex++;
+                    } else {
+                        currentIndex = 0;
+                    }
+                    updateSlider();
+                }, 4000);
+            }
+            
+            function stopAutoSlide() {
+                if (autoSlideInterval) {
+                    clearInterval(autoSlideInterval);
+                    autoSlideInterval = null;
+                }
+            }
+            
+            // Mouse hover events
+            const reviewsSection = document.querySelector('.reviews');
+            if (reviewsSection) {
+                reviewsSection.addEventListener('mouseenter', stopAutoSlide);
+                reviewsSection.addEventListener('mouseleave', startAutoSlide);
+            }
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (reviewsSection && reviewsSection.matches(':hover')) {
+                    if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        if (currentIndex > 0) {
+                            currentIndex--;
+                            updateSlider();
+                        }
+                    } else if (e.key === 'ArrowRight') {
+                        e.preventDefault();
+                        if (currentIndex < maxSlides) {
+                            currentIndex++;
+                            updateSlider();
+                        }
+                    }
+                }
+            });
+            
+            // Initialize
+            updateSlider();
+            startAutoSlide();
+            
+            // Return control object
+            return {
+                goToSlide,
+                getCurrentSlide: () => currentIndex,
+                getTotalSlides: () => maxSlides + 1,
+                startAutoSlide,
+                stopAutoSlide
+            };
+        }
+
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Initializing reviews slider...');
+            const reviewsSlider = initializeReviewsSlider();
+            window.reviewsSlider = reviewsSlider;
+            console.log('Reviews slider initialized successfully');
+        });

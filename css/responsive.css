@@ -316,6 +316,10 @@
         height: 18px;
     }
 
+     .capsules-section {
+                padding: var(--spacing-4xl) 0;
+            }
+
     .capsules-content {
         grid-template-columns: 1fr;
         gap: var(--spacing-3xl);
@@ -330,13 +334,15 @@
     }
 
     .capsules-text-slide h2 {
-        text-align: center;
+             text-align: center;
+                font-size: clamp(24px, 6vw, 36px);
     }
 
     .capsules-text-slide p {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+  text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
     }
 
     .capsules-text-slide .btn-primary {
@@ -371,6 +377,11 @@
         order: 2;
     }
 
+    .vertical-slider {
+                width: 300px;
+                height: 300px;
+            }
+            
     .slider-dots {
         gap: 10px;
     }
