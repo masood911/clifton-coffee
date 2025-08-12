@@ -61,7 +61,7 @@
     .slide {
         gap: 6px;
         padding: 0;
-                width: max-content;
+        width: max-content;
     }
 
     .insta-card {
@@ -78,18 +78,19 @@
         width: 10px;
         height: 10px;
     }
-     .newsletter-form {
-                margin: 0 8px;
-            }
 
-            .newsletter-input {
-                padding: 14px 18px;
-                font-size: 14px;
-            }
+    .newsletter-form {
+        margin: 0 8px;
+    }
 
-            .newsletter-btn {
-                padding: 14px 18px;
-            }
+    .newsletter-input {
+        padding: 14px 18px;
+        font-size: 14px;
+    }
+
+    .newsletter-btn {
+        padding: 14px 18px;
+    }
 }
 
 /* Very Small Screens */
@@ -123,18 +124,19 @@
     }
 
     .new-products-content {
-         grid-template-columns: 1fr;
-                gap: var(--spacing-3xl);
+        grid-template-columns: 1fr;
+        gap: var(--spacing-3xl);
     }
 
-      .image-grid {
-                height: 400px;
-            }
+    .image-grid {
+        height: 400px;
+    }
 
-            .products-nav {
-                left: -20px;
-                right: -20px;
-            }
+    .products-nav {
+        left: -20px;
+        right: -20px;
+    }
+
     .mega-menu-grid {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
@@ -286,7 +288,7 @@
     }
 
     .tab-btn {
-                padding: var(--spacing-xs) var(--spacing-lg);
+        padding: var(--spacing-xs) var(--spacing-lg);
         min-width: 80px;
     }
 
@@ -302,10 +304,11 @@
         font-size: 13px;
     }
 
-        .products-nav {
-                left: -15px;
-                right: -15px;
-            }
+    .products-nav {
+        left: -15px;
+        right: -15px;
+    }
+
     .nav-arrow-btn {
         width: 40px;
         height: 40px;
@@ -316,9 +319,9 @@
         height: 18px;
     }
 
-     .capsules-section {
-                padding: var(--spacing-4xl) 0;
-            }
+    .capsules-section {
+        padding: var(--spacing-4xl) 0;
+    }
 
     .capsules-content {
         grid-template-columns: 1fr;
@@ -334,15 +337,15 @@
     }
 
     .capsules-text-slide h2 {
-             text-align: center;
-                font-size: clamp(24px, 6vw, 36px);
+        text-align: center;
+        font-size: clamp(24px, 6vw, 36px);
     }
 
     .capsules-text-slide p {
-  text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
     }
 
     .capsules-text-slide .btn-primary {
@@ -378,10 +381,10 @@
     }
 
     .vertical-slider {
-                width: 300px;
-                height: 300px;
-            }
-            
+        width: 300px;
+        height: 300px;
+    }
+
     .slider-dots {
         gap: 10px;
     }
@@ -424,11 +427,14 @@
 
     .newsletter-form {
         max-width: 300px;
-        margin: 0 auto; /* centers horizontally */
+        margin: 0 auto;
+        /* centers horizontally */
         display: flex;
-        justify-content: center; /* centers content horizontally */
-        align-items: center;     /* centers content vertically (if height given) */
-        
+        justify-content: center;
+        /* centers content horizontally */
+        align-items: center;
+        /* centers content vertically (if height given) */
+
     }
 
     .footer-bottom {
@@ -438,8 +444,8 @@
     }
 
     .image-grid {
-         height: 350px;
-                /* gap: var(--spacing-xs); */
+        height: 350px;
+        /* gap: var(--spacing-xs); */
     }
 
     .side-images {
@@ -482,26 +488,31 @@
 @media (max-width: 480px) {
     .collections {
         padding: var(--spacing-xs);
-                margin-top: -100px;
+        margin-top: -100px;
     }
+
     .hero-video {
         height: 80%;
     }
+
     .hero-overlay {
         height: 80%;
     }
-      .container {
-                padding: 0 var(--spacing-md);
-            }
+
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
     .slider-container {
         padding: 0 10px;
     }
-    
- .slider-track {
-        gap: 10px; /* add space between images */
+
+    .slider-track {
+        gap: 10px;
+        /* add space between images */
     }
 
- 
+
 
     .slider-nav {
         width: 40px;
@@ -526,6 +537,7 @@
         max-width: 280px;
         border-radius: var(--radius-lg);
     }
+
     .collections-track {
         gap: var(--spacing-sm);
     }
@@ -559,28 +571,30 @@
 
     .product-tabs {
         gap: var(--spacing-sm);
-                justify-content: center;
+        justify-content: center;
     }
-    
+
     /* .new-products {
                 padding: var(--spacing-3xl) 0;
             } */
 
-             .new-products {
-       padding: var(--spacing-2xl) 0;
- }
-            
-            .new-products-content {
-                gap: var(--spacing-2xl);
-            }
+    .new-products {
+        padding: var(--spacing-2xl) 0;
+    }
 
-               .products-nav {
-                left: -10px;
-                right: -10px;
-            }
-              .image-grid {
-                height: 328px;
-            }
+    .new-products-content {
+        gap: var(--spacing-2xl);
+    }
+
+    .products-nav {
+        left: -10px;
+        right: -10px;
+    }
+
+    .image-grid {
+        height: 328px;
+    }
+
     .tab-btn {
         padding: 8px var(--spacing-md);
         font-size: 12px;
@@ -724,23 +738,25 @@
         font-size: clamp(32px, 8vw, 56px);
         margin-bottom: var(--spacing-lg);
     }
-     .newsletter {
-                padding: 60px 20px;
-            }
-              .newsletter-form {
-                max-width: 100%;
-                margin: 0 16px;
-            }
 
-            .newsletter-input {
-                padding: 16px 20px;
-                font-size: 15px;
-            }
+    .newsletter {
+        padding: 60px 20px;
+    }
 
-            .newsletter-btn {
-                padding: 16px 20px;
-                font-size: 15px;
-            }
+    .newsletter-form {
+        max-width: 100%;
+        margin: 0 16px;
+    }
+
+    .newsletter-input {
+        padding: 16px 20px;
+        font-size: 15px;
+    }
+
+    .newsletter-btn {
+        padding: 16px 20px;
+        font-size: 15px;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
