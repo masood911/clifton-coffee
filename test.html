@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Clifton Coffee</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .success { background: #d4edda; border-color: #c3e6cb; }
+        .error { background: #f8d7da; border-color: #f5c6cb; }
+        .loading { background: #d1ecf1; border-color: #bee5eb; }
+    </style>
+</head>
+<body>
+    <h1>Clifton Coffee Website Test</h1>
+    
+    <div class="test-section loading">
+        <h3>Testing Website Loading...</h3>
+        <p>This will test if the main website loads properly.</p>
+    </div>
+    
+    <div class="test-section">
+        <h3>Test Results:</h3>
+        <div id="results"></div>
+    </div>
+    
+    <script>
+        // Test if the main website loads
+        function testWebsite() {
+            const results = document.getElementById('results');
+            const loadingSection = document.querySelector('.loading');
+            
+            // Test 1: Check if main HTML loads
+            fetch('./index.html')
+                .then(response => {
+                    if (response.ok) {
+                        results.innerHTML += '<div class="success">✓ Main HTML loads successfully</div>';
+                        loadingSection.className = 'test-section success';
+                        loadingSection.innerHTML = '<h3>✓ Website Loads Successfully!</h3><p>The main website is accessible.</p>';
+                    } else {
+                        results.innerHTML += '<div class="error">✗ Main HTML failed to load</div>';
+                        loadingSection.className = 'test-section error';
+                    }
+                })
+                .catch(error => {
+                    results.innerHTML += '<div class="error">✗ Error loading main HTML: ' + error.message + '</div>';
+                    loadingSection.className = 'test-section error';
+                });
+            
+            // Test 2: Check if CSS files load
+            const cssFiles = ['./css/variables.css', './css/styles.css', './css/responsive.css'];
+            cssFiles.forEach(cssFile => {
+                fetch(cssFile)
+                    .then(response => {
+                        if (response.ok) {
+                            results.innerHTML += '<div class="success">✓ ' + cssFile + ' loads successfully</div>';
+                        } else {
+                            results.innerHTML += '<div class="error">✗ ' + cssFile + ' failed to load</div>';
+                        }
+                    })
+                    .catch(error => {
+                        results.innerHTML += '<div class="error">✗ Error loading ' + cssFile + ': ' + error.message + '</div>';
+                    });
+            });
+            
+            // Test 3: Check if JS files load
+            const jsFiles = ['./js/main.js', './js/products.js', './js/utils.js'];
+            jsFiles.forEach(jsFile => {
+                fetch(jsFile)
+                    .then(response => {
+                        if (response.ok) {
+                            results.innerHTML += '<div class="success">✓ ' + jsFile + ' loads successfully</div>';
+                        } else {
+                            results.innerHTML += '<div class="error">✗ ' + jsFile + ' failed to load</div>';
+                        }
+                    })
+                    .catch(error => {
+                        results.innerHTML += '<div class="error">✗ Error loading ' + jsFile + ': ' + error.message + '</div>';
+                    });
+            });
+        }
+        
+        // Run tests when page loads
+        window.addEventListener('load', testWebsite);
+    </script>
+</body>
+</html> 
