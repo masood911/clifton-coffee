@@ -1,4 +1,3 @@
-// Search Overlay Functionality
 function initializeSearchOverlay() {
     const searchBtn = document.getElementById('search-btn');
     const searchOverlay = document.getElementById('search-overlay');
@@ -10,7 +9,7 @@ function initializeSearchOverlay() {
             e.preventDefault();
             searchOverlay.classList.add('active');
             document.body.style.overflow = 'hidden';
-            
+
             setTimeout(() => {
                 searchInput.focus();
             }, 300);
@@ -53,7 +52,6 @@ function initializeSearchOverlay() {
     }
 }
 
-// Cart Panel Functionality
 function initializeCartPanel() {
     const cartBtn = document.getElementById('cart-btn');
     const cartPanel = document.getElementById('cart-panel');

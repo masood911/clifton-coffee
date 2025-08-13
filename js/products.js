@@ -1,4 +1,3 @@
-// Products data for New Products section
 const newProductsData = {
     coffee: [
         {
@@ -106,33 +105,29 @@ const newProductsData = {
     ]
 };
 
-// Card colors array - different color for each product
 const cardColors = [
-    '#d6dbda', // Light pink
-    '#d3d3cb', // Light blue  
-    '#e3f5f6ff', // Light green
-    '#eaefffff', // Light orange
-    '#d3d3cb', // Light purple
-    '#E0F2F1', // Light teal
-    '#d6dbda', // Light yellow
-    'rgba(230, 221, 224, 1)', // Light rose
-    '#E3F2FD', // Light sky blue
-    '#F1F8E9', // Light lime
-    '#fff5d3ff', // Light peach
-    '#='  // Light plum
+    '#d6dbda',
+    '#d3d3cb',
+    '#e3f5f6ff',
+    '#eaefffff',
+    '#d3d3cb',
+    '#E0F2F1',
+    '#d6dbda',
+    'rgba(230, 221, 224, 1)',
+    '#E3F2FD',
+    '#F1F8E9',
+    '#fff5d3ff',
+    '#='
 ];
 
-// State management for New Products
 let newProductsCurrentTab = 'coffee';
 let newProductsCurrentPage = 0;
 let newProductsItemsPerPage = getNewProductsItemsPerPage();
 
-// Get items per page based on screen size
 function getNewProductsItemsPerPage() {
     return window.innerWidth <= 768 ? 1 : 2;
 }
 
-// Update items per page on resize
 function updateNewProductsItemsPerPage() {
     const newItemsPerPage = getNewProductsItemsPerPage();
     if (newItemsPerPage !== newProductsItemsPerPage) {
@@ -143,7 +138,6 @@ function updateNewProductsItemsPerPage() {
     }
 }
 
-// Display products for current tab and page
 function displayNewProducts() {
     const productsGrid = document.getElementById('products-grid');
     if (!productsGrid) return;
@@ -165,7 +159,6 @@ function displayNewProducts() {
     });
 }
 
-// Create product card HTML with different colors
 function createNewProductCard(product, displayIndex) {
     const card = document.createElement('div');
     card.className = 'product-card';
@@ -173,7 +166,6 @@ function createNewProductCard(product, displayIndex) {
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'all 0.5s ease';
 
-    // Apply different background color for each product based on product ID
     const colorIndex = (product.id - 1) % cardColors.length;
     card.style.backgroundColor = cardColors[colorIndex];
     card.style.borderRadius = '12px';
@@ -195,7 +187,6 @@ function createNewProductCard(product, displayIndex) {
     return card;
 }
 
-// Update navigation buttons
 function updateNewProductsNavigation() {
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
@@ -212,7 +203,6 @@ function updateNewProductsNavigation() {
     nextBtn.style.opacity = newProductsCurrentPage >= totalPages - 1 ? '0.3' : '1';
 }
 
-// Handle tab change
 function handleNewProductsTabChange(tab) {
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.classList.remove('active');
@@ -230,7 +220,6 @@ function handleNewProductsTabChange(tab) {
     updateNewProductsNavigation();
 }
 
-// Handle previous page
 function handleNewProductsPrevPage() {
     if (newProductsCurrentPage > 0) {
         newProductsCurrentPage--;
@@ -239,7 +228,6 @@ function handleNewProductsPrevPage() {
     }
 }
 
-// Handle next page
 function handleNewProductsNextPage() {
     const currentProducts = newProductsData[newProductsCurrentTab] || [];
     const totalPages = Math.ceil(currentProducts.length / newProductsItemsPerPage);
@@ -251,7 +239,6 @@ function handleNewProductsNextPage() {
     }
 }
 
-// Initialize New Products functionality
 function initializeNewProductTabs() {
     document.querySelectorAll('.tab-btn').forEach(btn => {
         btn.addEventListener('click', function () {
@@ -268,7 +255,6 @@ function initializeNewProductTabs() {
     updateNewProductsNavigation();
 }
 
-// New Products Navigation
 function initializeNewProductNavigation() {
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
@@ -278,7 +264,6 @@ function initializeNewProductNavigation() {
         nextBtn.addEventListener('click', handleNewProductsNextPage);
     }
 
-    // Touch/swipe support
     let startX = 0;
     let endX = 0;
 
@@ -307,7 +292,6 @@ function initializeNewProductNavigation() {
         }
     }
 
-    // Keyboard navigation support
     document.addEventListener('keydown', function (e) {
         if (e.target.closest('.products-section')) {
             if (e.key === 'ArrowLeft') {
@@ -319,7 +303,6 @@ function initializeNewProductNavigation() {
     });
 }
 
-// Updated Product Slider with colors
 function initializeProductSlider() {
     const tabButtons = document.querySelectorAll('.tab-btn');
     const productsGrid = document.getElementById('products-grid');
@@ -332,7 +315,7 @@ function initializeProductSlider() {
     const itemsPerSlide = 2;
 
     function createProductCard(product) {
-        // Apply different background color for each product
+
         const colorIndex = (product.id - 1) % cardColors.length;
         const backgroundColor = cardColors[colorIndex];
 
@@ -357,7 +340,6 @@ function initializeProductSlider() {
 
         productsGrid.innerHTML = productsToShow.map(product => createProductCard(product)).join('');
 
-        // Update navigation buttons
         const totalSlides = Math.ceil(currentProducts.length / itemsPerSlide);
         prevBtn.disabled = currentSlide === 0;
         nextBtn.disabled = currentSlide >= totalSlides - 1;
@@ -378,21 +360,18 @@ function initializeProductSlider() {
         updateSlider();
     }
 
-    // Tab button event listeners
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove active class from all buttons
+
             tabButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
+
             button.classList.add('active');
 
-            // Show category products
             const category = button.getAttribute('data-tab');
             showCategory(category);
         });
     });
 
-    // Navigation button event listeners
     prevBtn.addEventListener('click', () => {
         if (currentSlide > 0) {
             currentSlide--;
@@ -408,7 +387,6 @@ function initializeProductSlider() {
         }
     });
 
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
         if (e.target.closest('.products-section')) {
             const totalSlides = Math.ceil(currentProducts.length / itemsPerSlide);
@@ -425,11 +403,9 @@ function initializeProductSlider() {
         }
     });
 
-    // Initialize with coffee category
     showCategory('coffee');
 }
 
-// Utility function for debouncing
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -442,13 +418,11 @@ function debounce(func, wait) {
     };
 }
 
-// Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function () {
     initializeProductSlider();
     initializeNewProductTabs();
     initializeNewProductNavigation();
 
-    // Add hover effects for dynamically created product cards
     document.addEventListener('mouseenter', function (e) {
         if (e.target.closest('.product-card')) {
             e.target.closest('.product-card').style.transform = 'translateY(-8px)';

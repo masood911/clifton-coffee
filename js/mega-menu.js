@@ -1,4 +1,3 @@
-// Enhanced Mega Menu Functionality
 function initializeMegaMenu() {
     const megaMenuData = {
         christmas: {
@@ -79,7 +78,7 @@ function initializeMegaMenu() {
         if (window.innerWidth <= 768) return;
 
         navItems.forEach(item => {
-            item.addEventListener('mouseenter', function() {
+            item.addEventListener('mouseenter', function () {
                 const menuType = this.getAttribute('data-menu');
                 if (menuType && megaMenuData[menuType]) {
                     clearTimeout(menuTimeout);
@@ -87,7 +86,7 @@ function initializeMegaMenu() {
                 }
             });
 
-            item.addEventListener('mouseleave', function() {
+            item.addEventListener('mouseleave', function () {
                 menuTimeout = setTimeout(() => {
                     if (!megaMenu?.matches(':hover')) {
                         hideMegaMenu();
@@ -97,11 +96,11 @@ function initializeMegaMenu() {
         });
 
         if (megaMenu) {
-            megaMenu.addEventListener('mouseenter', function() {
+            megaMenu.addEventListener('mouseenter', function () {
                 clearTimeout(menuTimeout);
             });
 
-            megaMenu.addEventListener('mouseleave', function() {
+            megaMenu.addEventListener('mouseleave', function () {
                 hideMegaMenu();
             });
         }
@@ -109,7 +108,7 @@ function initializeMegaMenu() {
 
     function showMegaMenu(menuType) {
         if (window.innerWidth <= 768 || !megaMenu) return;
-        
+
         const data = megaMenuData[menuType];
         if (!data) return;
 
@@ -158,7 +157,7 @@ function initializeMegaMenu() {
 
     initDesktopMegaMenu();
 
-    window.addEventListener('resize', debounce(function() {
+    window.addEventListener('resize', debounce(function () {
         hideMegaMenu();
         initDesktopMegaMenu();
     }, 250));

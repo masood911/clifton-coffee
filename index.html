@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,49 +12,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Top Banner -->
     <div class="top-banner">
         <p>Order before 10am for same day dispatch!</p>
     </div>
 
-    <!-- Header Section -->
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-    
-                <!-- Mobile Menu Button -->
+
                 <button class="mobile-menu-btn" id="mobile-menu-btn">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-    
+
                 <nav class="nav-main">
-                    <!-- Left Navigation -->
                     <div class="nav-left">
                         <div class="nav-item" data-menu="christmas">
-                            <a href="#" class="nav-link">Shop Christmas <span class="nav-arrow">▼</span></a>
+                            <a href="#" class="nav-link">Shop Christmas <svg class="nav-arrow" viewBox="0 0 12 12"
+                                    fill="currentColor">
+                                    <path d="M6 8.5L2.5 5h7L6 8.5z" />
+                                </svg></a>
                         </div>
                         <div class="nav-item" data-menu="coffee">
-                            <a href="#" class="nav-link">Coffee <span class="nav-arrow">▼</span></a>
+                            <a href="#" class="nav-link">Coffee <svg class="nav-arrow" viewBox="0 0 12 12"
+                                    fill="currentColor">
+                                    <path d="M6 8.5L2.5 5h7L6 8.5z" />
+                                </svg></a>
                         </div>
                         <!-- <div class="nav-item" data-menu="subscriptions">
                             <a href="#" class="nav-link">Subscriptions <span class="nav-arrow">▼</span></a>
                         </div> -->
                         <div class="nav-item" data-menu="accessories">
-                            <a href="#" class="nav-link">Accessories <span class="nav-arrow">▼</span></a>
+                            <a href="#" class="nav-link">Accessories <svg class="nav-arrow" viewBox="0 0 12 12"
+                                    fill="currentColor">
+                                    <path d="M6 8.5L2.5 5h7L6 8.5z" />
+                                </svg></a>
                         </div>
                     </div>
-    
-                    <!-- Center Logo -->
+
                     <div class="logo">
                         <div class="logo-main">
                             <img class="logo-img" src="./images/new-logo-white 3 1.png" alt="logo-responsive">
                         </div>
                     </div>
-    
-                    <!-- Right Navigation -->
+
                     <div class="nav-right">
                         <a href="#" class="nav-link">Wholesale</a>
                         <a href="#" class="nav-link">Education</a>
@@ -84,36 +89,34 @@
                         </div>
                     </div>
                 </nav>
-    
-    
-                <!-- Mobile Icons (Right) -->
+
                 <div class="mobile-icons">
                     <button class="nav-icon" aria-label="Account">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                             <circle cx="12" cy="7" r="4" />
                         </svg>
                     </button>
                     <button class="nav-icon" id="search-btn" aria-label="Search">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
                             <circle cx="11" cy="11" r="8" />
                             <path d="m21 21-4.35-4.35" />
                         </svg>
                     </button>
                     <button class="nav-icon cart-icon" id="cart-btn" aria-label="Shopping cart">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
                             <path
                                 d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5M17 13v6a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-6" />
                         </svg>
                         <span class="cart-count">0</span>
                     </button>
                 </div>
-    
+
             </div>
 
-
-
-             <!-- Mobile Navigation Menu -->
             <div class="mobile-nav" id="mobile-nav">
                 <div class="mobile-nav-content">
                     <div class="mobile-nav-item">
@@ -179,7 +182,6 @@
                 </div>
             </div>
 
-            <!-- Mega Menu -->
             <div class="mega-menu" id="mega-menu">
                 <div class="mega-menu-content">
                     <div class="mega-menu-grid">
@@ -207,10 +209,8 @@
         </div>
     </header>
 
-        <!-- Mobile Navigation Overlay -->
     <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
 
-    <!-- Search Overlay -->
     <div class="search-overlay" id="search-overlay">
         <div class="search-overlay-content">
             <button class="search-close" id="search-close">
@@ -224,9 +224,10 @@
                 <div class="search-input-container">
                     <input type="text" class="search-input" placeholder="Search for products..." id="search-input">
                     <button class="search-submit">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"/>
-                            <path d="m21 21-4.35-4.35"/>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.35-4.35" />
                         </svg>
                     </button>
                 </div>
@@ -234,7 +235,6 @@
         </div>
     </div>
 
-    <!-- Cart Panel -->
     <div class="cart-panel" id="cart-panel">
         <div class="cart-panel-content">
             <div class="cart-header">
@@ -252,16 +252,13 @@
                     <button class="cart-continue-btn">Continue Browsing</button>
                 </div>
                 <div class="cart-items" id="cart-items">
-                    <!-- Cart items will be added here dynamically -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Cart Panel Overlay -->
     <div class="cart-overlay" id="cart-overlay"></div>
 
-    <!-- Hero Section -->
     <section class="hero">
         <video class="hero-video" autoplay muted loop>
             <source src="./video/hero.mp4" type="video/mp4">
@@ -273,7 +270,6 @@
         </div>
     </section>
 
-    <!-- Our Collections Section -->
     <section class="collections">
         <div class="container">
             <div class="section-header">
@@ -282,7 +278,8 @@
             <div class="collections-slider">
                 <button class="slider-nav prev" id="collections-prev">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </button>
                 <div class="collections-track" id="collections-track">
@@ -350,9 +347,9 @@
                                 <button class="collection-btn">Shop Now</button>
                             </div>
                         </div>
-                        
+
                     </div>
-                           <div class="collection-card">
+                    <div class="collection-card">
                         <div class="collection-image">
                             <img src="./images/coffee.png" alt="Gift Sets" class="card-img">
                             <div class="collection-overlay"></div>
@@ -383,13 +380,14 @@
                                 <button class="collection-btn">Shop Now</button>
                             </div>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
                 <button class="slider-nav next" id="collections-next">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </button>
                 <div class="collections-dots" id="collections-dots">
@@ -402,16 +400,14 @@
         </div>
     </section>
 
-    <!-- New Products Section -->
     <section class="new-products">
         <div class="container">
             <div class="new-products-header">
                 <h2 class="section-title">New Products</h2>
                 <p class="section-subtitle">Discover our premium coffee collections crafted for every taste!</p>
             </div>
-            
+
             <div class="new-products-content">
-                <!-- Left Side - Image Grid -->
                 <div class="products-images">
                     <div class="image-grid">
                         <img src="./images/5.png" alt="Coffee brewing" class="grid-img">
@@ -421,32 +417,28 @@
                     </div>
                 </div>
 
-                <!-- Right Side - Product Cards and Tabs -->
                 <div class="products-section">
-                    <!-- Product Tabs -->
                     <div class="product-tabs">
                         <button class="tab-btn active" data-tab="coffee">Coffee</button>
                         <button class="tab-btn" data-tab="capsule">Capsule</button>
                         <button class="tab-btn" data-tab="all">All</button>
                     </div>
 
-                    <!-- Products Container -->
                     <div class="products-container">
-                        <!-- Product Cards -->
                         <div class="products-grid" id="products-grid">
-                            <!-- Products will be dynamically loaded here -->
                         </div>
 
-                        <!-- Navigation Arrows -->
                         <div class="products-nav">
                             <button class="nav-arrow-btn prev" id="prev-btn" disabled>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </button>
                             <button class="nav-arrow-btn next" id="next-btn">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </button>
                         </div>
@@ -456,14 +448,14 @@
         </div>
     </section>
 
-    <!-- Shop Coffee Section -->
-     <section class="shop-coffee">
+    <section class="shop-coffee">
         <div class="container">
             <div class="shop-coffee-content">
                 <div class="shop-coffee-text">
                     <h2 class="section-title">Shop coffee</h2>
-                    <p class="section-description">Discover your perfect cup of coffee—crafted to match your taste and style. 
-Wake up to perfection every day!
+                    <p class="section-description">Discover your perfect cup of coffee—crafted to match your taste and
+                        style.
+                        Wake up to perfection every day!
                     </p>
                     <!-- <button class="btn-primary">Explore Collection</button> -->
                 </div>
@@ -479,59 +471,54 @@ Wake up to perfection every day!
         </div>
     </section>
 
-       <!-- Clifton Capsules Section -->
-      <section class="capsules-section">
+    <section class="capsules-section">
         <div class="container">
             <div class="capsules-content">
-                <!-- Text Container with Sliding Effect and Preview -->
                 <div class="capsules-text-container">
                     <div class="capsules-text-track" id="capsules-text-track">
-                        <div class="capsules-text-slide active">
+                        <div class="capsules-text-slide current">
                             <h2>Clifton Capsules</h2>
-                            <p>Experience the convenience of our premium coffee capsules, delivering the same exceptional quality and taste as our freshly ground beans in a convenient, single-serve format.</p>
+                            <p>Experience the convenience of our premium coffee capsules, delivering the same
+                                exceptional quality and taste as our freshly ground beans in a convenient, single-serve
+                                format.</p>
                             <a href="#" class="btn-primary">Shop Capsules</a>
                         </div>
-                        <div class="capsules-text-slide">
+                        <div class="capsules-text-slide hidden">
                             <h2>Premium Espresso</h2>
-                            <p>Our espresso capsules offer the perfect balance of strength and smoothness, crafted from carefully selected beans and expertly roasted to create a rich, aromatic experience.</p>
+                            <p>Our espresso capsules offer the perfect balance of strength and smoothness, crafted from
+                                carefully selected beans and expertly roasted to create a rich, aromatic experience.</p>
                             <a href="#" class="btn-primary">Explore Range</a>
                         </div>
-                        <div class="capsules-text-slide">
+                        <div class="capsules-text-slide hidden">
                             <h2>Specialty Blends</h2>
-                            <p>Indulge in our specialty blend capsules, featuring unique flavor profiles that showcase the distinct characteristics of coffee from different regions around the world.</p>
+                            <p>Indulge in our specialty blend capsules, featuring unique flavor profiles that showcase
+                                the distinct characteristics of coffee from different regions around the world.</p>
                             <a href="#" class="btn-primary">Shop Blends</a>
                         </div>
-                        <div class="capsules-text-slide">
+                        <div class="capsules-text-slide hidden">
                             <h2>Sustainable Choice</h2>
-                            <p>Discover our sustainable capsule collection, made from recyclable materials while maintaining the highest standards of coffee quality and environmental responsibility.</p>
+                            <p>Discover our sustainable capsule collection, made from recyclable materials while
+                                maintaining the highest standards of coffee quality and environmental responsibility.
+                            </p>
                             <a href="#" class="btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Image Slider - Full Images Without Masking -->
                 <div class="capsules-image-slider">
                     <div class="vertical-slider">
                         <div class="slider-track" id="capsules-slider-track">
                             <div class="slide">
-                                <img src="./images/2.png" 
-                                     alt="Coffee capsules collection" 
-                                     class="slide-image">
+                                <img src="./images/2.png" alt="Premium espresso capsules" class="slide-image">
                             </div>
                             <div class="slide">
-                                <img src="./images/AprilSubs1-1024x435.png" 
-                                     alt="Premium espresso capsules" 
-                                     class="slide-image">
+                                <img src="./images/5 (1).png" alt="Premium espresso capsules" class="slide-image">
                             </div>
                             <div class="slide">
-                                <img src="./images/5 (1).png" 
-                                     alt="Specialty blend capsules" 
-                                     class="slide-image">
+                                <img src="./images/2 (1).png" alt="Specialty blend capsules" class="slide-image">
                             </div>
                             <div class="slide">
-                                <img src="./images/4.png" 
-                                     alt="Sustainable coffee capsules" 
-                                     class="slide-image">
+                                <img src="./images/4.png" alt="Specialty blend capsules" class="slide-image">
                             </div>
                         </div>
                     </div>
@@ -546,9 +533,7 @@ Wake up to perfection every day!
         </div>
     </section>
 
-
-        <!-- Our Favorites Section -->
-   <section class="favorites">
+    <section class="favorites">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Our Favorites</h2>
@@ -564,8 +549,7 @@ Wake up to perfection every day!
                             <div class="favorite-price">£13.50</div>
                             <div class="favorite-stars">★★★★★</div>
                         </div>
-                        
-                        <!-- Hover Card -->
+
                         <div class="hover-card">
                             <div class="hover-card-content">
                                 <div class="coffee-details">
@@ -585,11 +569,11 @@ Wake up to perfection every day!
                                         <span class="detail-value">Natural</span>
                                     </div>
                                 </div>
-                                
+
                                 <h3 class="hover-card-title">Clifton Coffee Colombia</h3>
                                 <div class="hover-card-price">£13.50</div>
                                 <div class="hover-card-stars">★★★★★</div>
-                                
+
                                 <div class="hover-card-buttons">
                                     <button class="btn-buy">Buy Now</button>
                                     <a href="#" class="btn-read-more">Read More</a>
@@ -607,8 +591,7 @@ Wake up to perfection every day!
                             <div class="favorite-price">£13.50</div>
                             <div class="favorite-stars">★★★★★</div>
                         </div>
-                        
-                        <!-- Hover Card -->
+
                         <div class="hover-card">
                             <div class="hover-card-content">
                                 <div class="coffee-details">
@@ -628,11 +611,11 @@ Wake up to perfection every day!
                                         <span class="detail-value">Wet Hulled</span>
                                     </div>
                                 </div>
-                                
+
                                 <h3 class="hover-card-title">Clifton Coffee Indonesia</h3>
                                 <div class="hover-card-price">£13.50</div>
                                 <div class="hover-card-stars">★★★★★</div>
-                                
+
                                 <div class="hover-card-buttons">
                                     <button class="btn-buy">Buy Now</button>
                                     <a href="#" class="btn-read-more">Read More</a>
@@ -650,8 +633,7 @@ Wake up to perfection every day!
                             <div class="favorite-price">£13.50</div>
                             <div class="favorite-stars">★★★★★</div>
                         </div>
-                        
-                        <!-- Hover Card -->
+
                         <div class="hover-card">
                             <div class="hover-card-content">
                                 <div class="coffee-details">
@@ -671,11 +653,11 @@ Wake up to perfection every day!
                                         <span class="detail-value">Washed</span>
                                     </div>
                                 </div>
-                                
+
                                 <h3 class="hover-card-title">Clifton Coffee Kenya</h3>
                                 <div class="hover-card-price">£13.50</div>
                                 <div class="hover-card-stars">★★★★★</div>
-                                
+
                                 <div class="hover-card-buttons">
                                     <button class="btn-buy">Buy Now</button>
                                     <a href="#" class="btn-read-more">Read More</a>
@@ -693,8 +675,7 @@ Wake up to perfection every day!
                             <div class="favorite-price">£13.50</div>
                             <div class="favorite-stars">★★★★★</div>
                         </div>
-                        
-                        <!-- Hover Card -->
+
                         <div class="hover-card">
                             <div class="hover-card-content">
                                 <div class="coffee-details">
@@ -714,11 +695,11 @@ Wake up to perfection every day!
                                         <span class="detail-value">Honey</span>
                                     </div>
                                 </div>
-                                
+
                                 <h3 class="hover-card-title">Clifton Coffee Panama</h3>
                                 <div class="hover-card-price">£13.50</div>
                                 <div class="hover-card-stars">★★★★★</div>
-                                
+
                                 <div class="hover-card-buttons">
                                     <button class="btn-buy">Buy Now</button>
                                     <a href="#" class="btn-read-more">Read More</a>
@@ -727,19 +708,20 @@ Wake up to perfection every day!
                         </div>
                     </div>
                 </div>
-                
+
                 <button class="slider-nav prev" id="favorites-prev">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </button>
                 <button class="slider-nav next" id="favorites-next">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </button>
 
-                <!-- Navigation Dots -->
                 <div class="favorites-dots">
                     <button class="favorites-dot active"></button>
                     <button class="favorites-dot"></button>
@@ -749,15 +731,12 @@ Wake up to perfection every day!
             </div>
         </div>
     </section>
-    
 
-      <!-- Promotions Section -->
     <section class="promotions">
         <div class="container">
             <div class="promotions-grid">
                 <div class="promo-card">
-                    <img src="./images/subscription.png"
-                        alt="Subscriptions">
+                    <img src="./images/subscription.png" alt="Subscriptions">
                     <div class="promo-overlay">
                         <div class="promo-content">
                             <h3 class="promo-title">Subscriptions</h3>
@@ -767,8 +746,7 @@ Wake up to perfection every day!
                     </div>
                 </div>
                 <div class="promo-card">
-                    <img src="./images/subscription (1).png"
-                        alt="Brazil Trip 2024">
+                    <img src="./images/subscription (1).png" alt="Brazil Trip 2024">
                     <div class="promo-overlay">
                         <div class="promo-content">
                             <h3 class="promo-title">Brazil Trip 2024</h3>
@@ -781,25 +759,26 @@ Wake up to perfection every day!
         </div>
     </section>
 
-        <!-- Virtual Tours Section -->
     <section class="virtual-tours">
         <div class="container">
             <div class="tours-content">
                 <div class="tours-text">
                     <h2 class="section-title">Virtual Tours</h2>
-                    <p class="section-tour-description">Come and have a walk through our HQ, take a look at our roastery, training room, showrooms, cupping room and engineering bay!A little bit on Future Virtual Ltd – We are a Brighton & Bristol based family business, covering the whole of the UK. We are leading the way in creating stunning, fully immersive & interactive 360 virtual tours across all industries such as business.</p>
+                    <p class="section-tour-description">Come and have a walk through our HQ, take a look at our
+                        roastery, training room, showrooms, cupping room and engineering bay!A little bit on
+                        Future Virtual Ltd – We are a Brighton & Bristol based family business, covering the whole of
+                        the UK. We are leading the way in creating stunning, fully immersive & interactive
+                        360 virtual tours across all industries such as business.</p>
                     <button class="virtual-btn-primary">Start Tour</button>
                 </div>
                 <div class="tours-image">
-                    <img src="./images/image.png"
-                        alt="Coffee shop interior">
+                    <img src="./images/image.png" alt="Coffee shop interior">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Reviews Section -->
- <section class="reviews">
+    <section class="reviews">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Thousands of 5 Star Reviews</h2>
@@ -808,37 +787,56 @@ Wake up to perfection every day!
                 <div class="reviews-track" id="reviews-track">
                     <div class="review-card">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">The coffee Cometeer experience is incredible. It's having a high end cup of coffee from a boutique coffee shop at my fingertips</p>
+                        <div class="review-para">
+                            All i can say is wow
+                        </div>
+                        <p class="review-text">The coffee Cometeer experience is incredible. It's having a high end cup
+                            of coffee from a boutique coffee shop at my fingertips</p>
                         <div class="review-author">- Sarah M.</div>
                     </div>
 
                     <div class="review-card">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">Amazing quality and convenience! The frozen coffee capsules are a game changer for my morning routine.</p>
+                        <div class="review-para">
+                            All i can say is wow
+                        </div>
+                        <p class="review-text">Amazing quality and convenience! The frozen coffee capsules are a game
+                            changer for my morning routine.</p>
                         <div class="review-author">- James T.</div>
                     </div>
 
                     <div class="review-card">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">Never going back to regular instant coffee. This is the future of premium coffee at home!</p>
+                        <div class="review-para">
+                            All i can say is wow
+                        </div>
+                        <p class="review-text">Never going back to regular instant coffee. This is the future of premium
+                            coffee at home!</p>
                         <div class="review-author">- Emily R.</div>
                     </div>
 
                     <div class="review-card">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">The variety of roasters and flavors is outstanding. Every cup tastes like it's from a specialty coffee shop.</p>
+                        <div class="review-para">
+                            All i can say is wow
+                        </div>
+                        <p class="review-text">The variety of roasters and flavors is outstanding. Every cup tastes like
+                            it's from a specialty coffee shop.</p>
                         <div class="review-author">- Michael D.</div>
                     </div>
 
                     <div class="review-card">
                         <div class="review-stars">★★★★★</div>
-                        <p class="review-text">Perfect for busy mornings. Premium coffee in seconds without any compromise on taste or quality.</p>
+                        <div class="review-para">
+                            All i can say is wow
+                        </div>
+                        <p class="review-text">Perfect for busy mornings. Premium coffee in seconds without any
+                            compromise on taste or quality.</p>
                         <div class="review-author">- Lisa K.</div>
                     </div>
 
                 </div>
 
-                <!-- Dots Navigation -->
                 <div class="reviews-dots" id="reviews-dots">
                     <button class="reviews-dot active" data-slide="0"></button>
                     <button class="reviews-dot" data-slide="1"></button>
@@ -849,99 +847,216 @@ Wake up to perfection every day!
         </div>
     </section>
 
-    <!-- Instagram Section -->
     <section class="instagram">
-        <div class="container"> 
-           <h2 class="insta-title">@cliftoncoffee</h2>
-        <p class="section-subtitle">Follow us on Instagram for the latest updates!</p>
-        
-        <div class="slider-container">
-            <div class="slider-track" id="sliderTrack">
-                <!-- Slide 1 -->
-                <div class="slide">
-                    <div class="insta-card">
-                        <img src="./images/box 1.png" alt="Coffee 4">
+        <div class="container">
+            <h2 class="insta-title">@cliftoncoffee</h2>
+            <p class="section-subtitle">Follow us on Instagram for the latest updates!</p>
+
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <div class="slide">
+                        <div class="insta-card">
+                            <img src="./images/box 1.png" alt="Latte art creation">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/2 (1).png" alt="Coffee shop interior">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/3 (1).png" alt="Coffee roasting">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/4.png" alt="Coffee cup details">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/5 (1).png" alt="Barista at work">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="insta-card">
-                        <img src="./images/2 (1).png" alt="Coffee 5">
+
+                    <div class="slide">
+                        <div class="insta-card">
+                            <img src="./images/3 (1).png" alt="Coffee roasting">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/4.png" alt="Coffee cup details">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/5 (1).png" alt="Barista at work">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/5 (1).png" alt="Coffee packaging">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/coffee.png" alt="Coffee tasting session">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                           <div class="insta-card">
-                        <img src="./images/3 (1).png" alt="Coffee 6">
+
+                    <div class="slide">
+                        <div class="insta-card">
+                            <img src="./images/3 (1).png" alt="Coffee roasting">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/4.png" alt="Coffee cup details">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/5 (1).png" alt="Barista at work">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/5 (1).png" alt="Coffee packaging">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/coffee.png" alt="Coffee tasting session">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="insta-card">
-                        <img src="./images/4.png" alt="Coffee 7">
-                    </div>
-                      <div class="insta-card">
-                        <img src="./images/5 (1).png" alt="Coffee 7">
+
+                    <div class="slide">
+                        <div class="insta-card">
+                            <img src="./images/3 (1).png" alt="Coffee roasting">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/4.png" alt="Coffee cup details">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/5 (1).png" alt="Barista at work">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/5 (1).png" alt="Coffee packaging">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="insta-card">
+                            <img src="./images/coffee.png" alt="Coffee tasting session">
+                            <div class="instagram-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Slide 2 -->
-                <div class="slide">
-                     <div class="insta-card">
-                        <img src="./images/box 1.png" alt="Coffee 4">
-                    </div>
-                    <div class="insta-card">
-                        <img src="./images/2 (1).png" alt="Coffee 5">
-                    </div>
-                           <div class="insta-card">
-                        <img src="./images/3 (1).png" alt="Coffee 6">
-                    </div>
-                    <div class="insta-card">
-                        <img src="./images/4.png" alt="Coffee 7">
-                    </div>
-                      <div class="insta-card">
-                        <img src="./images/5 (1).png" alt="Coffee 7">
-                    </div>
-                </div>
-                   <div class="slide">
-                     <div class="insta-card">
-                        <img src="./images/box 1.png" alt="Coffee 4">
-                    </div>
-                    <div class="insta-card">
-                        <img src="./images/2 (1).png" alt="Coffee 5">
-                    </div>
-                           <div class="insta-card">
-                        <img src="./images/3 (1).png" alt="Coffee 6">
-                    </div>
-                    <div class="insta-card">
-                        <img src="./images/4.png" alt="Coffee 7">
-                    </div>
-                      <div class="insta-card">
-                        <img src="./images/5 (1).png" alt="Coffee 7">
-                    </div>
-                </div>
-                   <div class="slide">
-                     <div class="insta-card">
-                        <img src="./images/box 1.png" alt="Coffee 4">
-                    </div>
-                    <div class="insta-card">
-                        <img src="./images/2 (1).png" alt="Coffee 5">
-                    </div>
-                           <div class="insta-card">
-                        <img src="./images/3 (1).png" alt="Coffee 6">
-                    </div>
-                    <div class="insta-card">
-                        <img src="./images/4.png" alt="Coffee 7">
-                    </div>
-                      <div class="insta-card">
-                        <img src="./images/5 (1).png" alt="Coffee 7">
-                    </div>
-                </div>
-            
+            </div>
+
+            <div class="dots-container" id="dotsContainer">
+                <button class="dot active" data-slide="0" aria-label="Go to slide 1"></button>
+                <button class="dot" data-slide="1" aria-label="Go to slide 2"></button>
+                <button class="dot" data-slide="2" aria-label="Go to slide 3"></button>
+                <button class="dot" data-slide="3" aria-label="Go to slide 4"></button>
             </div>
         </div>
-        
-        <div class="dots-container" id="dotsContainer">
-            <button class="dot active" data-slide="0"></button>
-            <button class="dot" data-slide="1"></button>
-            <button class="dot" data-slide="2"></button>
-            <button class="dot" data-slide="3"></button>
-        </div>
-    </div>
     </section>
 
-    <!-- Newsletter Section -->
     <section class="newsletter">
         <div class="container">
             <div class="newsletter-content">
@@ -949,19 +1064,49 @@ Wake up to perfection every day!
                 <p class="section-description">The latest coffees, offers and news from the Clifton.</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Enter your email address" class="newsletter-input">
-   <button type="submit" class="newsletter-btn">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                    <button type="submit" class="newsletter-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
-                    </button>                </form>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
+                <div class="footer-brand">
+
+                    <div class="footer-certification">
+                        <div class="cert-badge">
+                            <img src="./images/B-Corp-Logo 2.png" alt="B Corporation Certified" />
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
                 <div class="footer-column">
                     <h3 class="footer-title">Shop</h3>
                     <ul class="footer-links">
@@ -990,20 +1135,39 @@ Wake up to perfection every day!
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3 class="footer-title">Follow Us</h3>
+                    <h3 class="footer-title">Contact Us</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">YouTube</a></li>
+                        <li>
+                            <a href="mailto:sales@cliftoncoffee.co.uk">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                                sales@cliftoncoffee.co.uk
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+44(0)1179820252">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                                +44 (0) 1179 820 252
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                                Write address here...
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="footer-logo">
-                    <div class="logo-main">CLIFTON</div>
-                    <div class="logo-sub">COFFEE ROASTERS</div>
-                </div>
                 <div class="footer-copyright">
                     © 2025 Clifton Coffee Roasters. All rights reserved.
                 </div>
@@ -1011,7 +1175,7 @@ Wake up to perfection every day!
         </div>
     </footer>
 
-      <script src="js/utils.js"></script>
+    <script src="js/utils.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/header.js"></script>
     <script src="js/mega-menu.js"></script>
@@ -1023,4 +1187,5 @@ Wake up to perfection every day!
     <script src="js/forms.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
